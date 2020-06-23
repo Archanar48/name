@@ -1,0 +1,93 @@
+######1.	Write a Python program to find area of a circle using math function.
+
+import math
+r = float(input("Enter the radius of the circle: "))
+area = math.pi* r * r
+print("%.2f" %area)
+
+#output:-Enter the radius of the circle:6
+#     113.10
+
+#######2.	Write a program to find Area of Regular Polygon using math function.
+
+from math import tan, pi
+n_sides = int(input("Input number of sides: "))
+s_length = float(input("Input the length of a side: "))
+p_area = n_sides * (s_length ** 2) / (4 * tan(pi / n_sides))
+print("The area of the polygon is: ",p_area)
+
+#output:-Input number of sides:4
+#     Input the length of a side:20
+#     The area of the polygon is:400.00000000000006
+
+######3.	Write a program to find  Area of a Segment of a Circle Formula using math function.
+
+import math as m
+r=int(input("enter radius:"))
+a=int(input("enter angle:"))
+print("area of a segment of circle is:",(m.pi*r*r)*(a/360))
+
+#output:- enter radius:9
+#      enter angle:60
+#      area of a segment of circle is: 42.411500823462205
+
+######4.	Write a python program to shuffle list l1=[100,1,2,3,30,40,”hai”,”hello”].
+
+import random as r
+l1=[100,1,2,3,30,40,"hai","hello"]
+r.shuffle(l1)
+print(l1)
+
+#output:-[3, 'hai', 100, 40, 2, 1, 'hello', 30]
+
+######5.     Write a program to generate random numbers between 1,10000 and difference between each random number is 50. 
+
+import random
+l=[]
+i=1
+while i in range(1,10000):
+    l.append(random.randrange(1,10000,50))
+    i+=50
+    print(l)
+    
+#output:-   [101, 8801, 7101, 4401, 501, 3151, 8401, 7201, 451, 4751, 1601, 2501, 1551, 8201, 5401, 2851, 1701, 6051, 351, 6151, 3751, 9551, 7451, 4051, 601, 1951, 4201, 8951, 4301, 2251, 5201, 2801, 8001, 2951, 9451, 5401, 5401, 1251, 4101, 3001, 151, 3401, 8751, 1551, 3351, 8201, 3851, 8451, 5601, 6901, 6151, 9701, 6501, 2401, 1251, 4451, 9301, 1751, 501, 4251, 2151, 8751, 1251, 5301, 4351, 2201, 6851, 1851, 3301, 2851, 3701, 4401, 3201, 6151, 2501, 2251, 1901, 6701, 4451, 4151, 7401, 3001, 4501, 7401, 2151, 6551, 5251, 4301, 3901, 3751, 8651, 6201, 3601, 1451, 7001, 7451, 3551, 3551, 6501, 1451, 6051, 651, 7751, 1, 6551, 3001, 1351, 5251, 1401, 8351, 801, 6251, 3301, 5851, 901, 8401, 9701, 6401, 3201, 8901, 8501, 2001, 9701, 9701, 251, 5651, 1901, 51, 4851, 7201, 601, 2251, 4401, 6401, 9351, 1351, 4801, 6001, 701, 2751, 6651, 3651, 5401, 3251, 3751, 6551, 2951, 851, 951, 6301, 6651, 3701, 4201, 8601, 6401, 8701, 501, 1551, 6301, 451, 9901, 7201, 9501, 3401, 9501, 6501, 251, 7301, 9951, 8551, 7351, 4151, 5901, 1551, 8351, 8101, 8651, 4251, 751, 9001, 1801, 651, 3251, 9851, 9051, 7601, 2351, 5551, 2351, 7851, 1751, 1701, 1001, 9351, 6801, 1801, 8851, 5551, 1351, 3301]
+
+######6.	Write a python program by using math module to find
+#i.	Sin60
+#ii.	cos(pi)
+#iii.	tan90
+#iv.	angle of sin(0.8660254037844386)
+#v.	5^8
+#vi.	Square root of 400
+#vii.	The value of 5^e
+#viii.	The value of Log(1024), base 2
+#ix.	The value of Log(1024), base 10
+#x.	The Floor and Ceiling value of 23.56 
+
+import math as m
+print(m.sin(60))
+print(m.cos(m.pi))
+print(m.tan(90))
+print(m.sin(0.8660254037844386))
+print(5**8)
+print(m.sqrt(400))
+print(m.e**5)
+print(m.log2(1024))
+print(m.log10(1024))
+print(m.floor(23.56))
+print(m.ceil(23.56))
+
+#output:- 0.3048106211022167
+#-1.0
+#-1.995200412208242
+#0.7617599814162892
+#390625
+#20.0
+#148.41315910257657
+#10.0
+#3.010299956639812
+#23
+#24
+
+
+
